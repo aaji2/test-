@@ -68,8 +68,8 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/nexus-canvas.git
-   cd nexus-canvas
+   git clone https://github.com/aaji2/test-.git
+   cd test-
    ```
 
 2. **Serve the files:**
@@ -212,8 +212,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Live Demo:** [https://nexus-canvas.demo.com](https://nexus-canvas.demo.com)
 - **Documentation:** [https://docs.nexus-canvas.com](https://docs.nexus-canvas.com)
-- **Issue Tracker:** [GitHub Issues](https://github.com/your-username/nexus-canvas/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/your-username/nexus-canvas/discussions)
+- **Issue Tracker:** [GitHub Issues](https://github.com/aaji2/test-/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/aaji2/test-/discussions)
 
 ## 📊 Project Status
 
