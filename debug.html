@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Nexus Canvas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0f;
+            color: white;
+            padding: 20px;
+        }
+        .error {
+            background: #ff4444;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .success {
+            background: #44ff44;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nexus Canvas Debug</h1>
+    <div id="status">Testing...</div>
+    
+    <script type="module">
+        const statusDiv = document.getElementById('status');
+        
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = type;
+            div.textContent = message;
+            statusDiv.appendChild(div);
+        }
+        
+        try {
+            log('Testing ES6 modules...', 'info');
+            
+            // Test basic import
+            import('./scripts/core/utils.js').then(module => {
+                log('✓ Utils module loaded successfully', 'success');
+                
+                // Test storage
+                return import('./scripts/core/storage.js');
+            }).then(module => {
+                log('✓ Storage module loaded successfully', 'success');
+                
+                // Test storage initialization
+                const storage = new module.StorageManager();
+                return storage.init();
+            }).then(() => {
+                log('✓ Storage initialized successfully', 'success');
+                
+                // Test app module
+                return import('./scripts/core/app.js');
+            }).then(module => {
+                log('✓ App module loaded successfully', 'success');
+                log('All modules loaded successfully! The issue might be in initialization.', 'success');
+            }).catch(error => {
+                log('✗ Error loading modules: ' + error.message, 'error');
+                console.error('Full error:', error);
+            });
+            
+        } catch (error) {
+            log('✗ Error in module test: ' + error.message, 'error');
+            console.error('Full error:', error);
+        }
+    </script>
+</body>
+</html>

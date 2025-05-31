@@ -1,0 +1,141 @@
+{
+  "name": "Nexus Canvas - Creative Workspace Suite",
+  "short_name": "Nexus Canvas",
+  "description": "Complete creative workspace suite with web design, image editing, video editing, screen recording, and productivity tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#1a1a2e",
+  "orientation": "landscape-primary",
+  "categories": ["productivity", "graphics", "developer"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "assets/icon-72.svg",
+      "sizes": "72x72",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-96.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-128.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-144.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-152.svg",
+      "sizes": "152x152",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-384.svg",
+      "sizes": "384x384",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Nexus Canvas Web Creator Studio"
+    },
+    {
+      "src": "assets/screenshot-narrow.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Nexus Canvas Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Web Creator",
+      "short_name": "Web Creator",
+      "description": "Create websites with drag-and-drop",
+      "url": "/?studio=web-creator",
+      "icons": [
+        {
+          "src": "assets/icon-192.svg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Code Studio",
+      "short_name": "Code Studio",
+      "description": "Write and edit code",
+      "url": "/?studio=code-editor",
+      "icons": [
+        {
+          "src": "assets/icon-192.svg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Image Studio",
+      "short_name": "Image Studio",
+      "description": "Edit images and graphics",
+      "url": "/?studio=image-editor",
+      "icons": [
+        {
+          "src": "assets/icon-192.svg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Video Studio",
+      "short_name": "Video Studio",
+      "description": "Edit videos and create content",
+      "url": "/?studio=video-editor",
+      "icons": [
+        {
+          "src": "assets/icon-192.svg",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "scope": "/",
+  "id": "nexus-canvas-suite",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred",
+  "capture_links": "existing-client-navigate"
+}
